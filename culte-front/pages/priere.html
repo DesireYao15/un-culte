@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réveil Méthodiste - Espace Prière</title>
+    <link rel="stylesheet" href="../assets/css/main.scss">
+</head>
+<body>
+    <header>
+        <h1>Mouvement de Réveil Méthodiste</h1>
+        <nav>
+            <a href="/">Accueil</a>
+            <a href="/pages/evenements.html">Événements</a>
+            <a href="/pages/priere.html" class="active">Prière</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="prayer-request">
+            <h2>Demande de Prière</h2>
+            <form id="prayerForm">
+                <div class="form-group">
+                    <label for="name">Votre nom (optionnel)</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="request">Votre demande de prière *</label>
+                    <textarea id="request" name="request" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="anonymous" id="anonymous">
+                        Soumettre anonymement
+                    </label>
+                </div>
+                
+                <button type="submit" class="submit-btn">Envoyer la demande</button>
+            </form>
+        </section>
+
+        <section class="prayer-wall">
+            <h2>Mur de Prière</h2>
+            <div class="prayers-list">
+                <!-- Les prières seront chargées dynamiquement -->
+                <div class="prayer-item">
+                    <p class="prayer-text">"Priez pour ma famille en difficulté financière"</p>
+                    <p class="prayer-meta">Anonyme - 2 jours</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../assets/js/prayer.js" type="module"></script>
+</body>
+</html>

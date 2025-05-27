@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réveil Méthodiste - Événements</title>
+    <link rel="stylesheet" href="../assets/css/main.scss">
+</head>
+<body>
+    <header>
+        <h1>Mouvement de Réveil Méthodiste</h1>
+        <nav>
+            <a href="/">Accueil</a>
+            <a href="/pages/evenements.html" class="active">Événements</a>
+            <a href="/pages/priere.html">Prière</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="calendar-section">
+            <h2>Calendrier des Événements</h2>
+            <div class="calendar">
+                <!-- Événements seront chargés dynamiquement -->
+                <div class="event-card">
+                    <h3>Veillée de Prière Mensuelle</h3>
+                    <p class="event-date">15 Juin 2023 - 20h00</p>
+                    <p class="event-location">En ligne via Zoom</p>
+                    <button class="register-btn">S'inscrire</button>
+                </div>
+
+                <div class="event-card">
+                    <h3>Retraite Spirituelle Annuelle</h3>
+                    <p class="event-date">22-24 Juin 2023</p>
+                    <p class="event-location">Centre de Retraite, Montagne</p>
+                    <button class="register-btn">S'inscrire</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="past-events">
+            <h2>Événements Passés</h2>
+            <div class="events-list">
+                <!-- Événements passés -->
+            </div>
+        </section>
+    </main>
+
+    <script src="../assets/js/events.js" type="module"></script>
+</body>
+</html>
